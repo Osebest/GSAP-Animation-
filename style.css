@@ -1,0 +1,203 @@
+body, html{
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+}
+
+.header{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between
+}
+#hideNav{
+ margin-left: 5%;
+ flex-basis: 100%;
+ margin-top: 5px;
+}
+.close{visibility: hidden;}
+.open{
+  visibility: visible;
+}
+
+.hideNav button{
+  margin-bottom: 10px;
+}
+@media only screen and (min-width:360px){
+  #hideNav{margin-left: 18%;}
+}
+
+.logo{
+  width: 50%;
+}
+#hamburgerBtn{
+  font-size: x-large;
+  font-weight: bold;
+}
+button{
+  padding: 12px 15px;
+  font-size: 14.8px;
+  color: white;
+  border: none;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.green{
+  background-image: linear-gradient(rgb(49, 177, 23) 50%, rgb(20, 83, 8) 50%)
+}
+.red{
+  background-image: linear-gradient(rgb(214, 28, 28) 50%, rgb(184, 25, 25) 50%)
+}
+.section2, .section3{
+  padding: 50px 30px;
+}
+.section1{
+  background-image: url("./images/doodle-kitchen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+}
+.pop{
+  width: 60%;
+  margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+.pot{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section1 span{
+  position: absolute;
+}
+.onion{
+  top: 65%;
+  left: 15%;
+  width: 25%;
+}
+.pepper1{
+  top: 40%;
+  left: 3%;
+  width: 25%;
+}
+.tt{
+  top: 90%;
+  right: 10%;
+  width: 27%;
+}
+.pepper{
+  top: 99%;
+  left: 10%;
+  width: 20%;
+}
+.tomato{
+  top: 50%;
+  right: 0%;
+  width: 20%;
+}
+.donot{
+  top: 110%;
+  right: 0%;
+  width: 25%;
+}
+.onion1{
+  top: 155%;
+  left: 5%;
+  width: 20%;
+}
+.donot1{
+  top: 150%;
+  right: 0%;
+  width: 30%;
+}
+
+.section2{
+  background-image: url("./images/images.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 30%;
+}
+
+.section3{
+  background-image: url("./images/black.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section3>div{
+  display: flex;
+  flex-direction: column;
+}
+.section3 button{
+  width: 67%;
+  margin-bottom: 20px;
+}
+
+.section4{
+  background-image: url("./images/image2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 10px 0 10px;
+}
+.section4 p{
+  margin: 20px;
+}
+.section4 button{
+  margin: 20px;
+  padding: 12px 30px;
+}
+.man{
+  margin-bottom: -4px;
+}
+
+.section5{
+  background-image: url("./images/food.jpg");
+  position: relative;
+  padding: 50px 10px;
+}
+.section5 p{
+  margin-bottom: 15%;
+  padding-left: 20px;
+}
+.arrow{
+  position: absolute;
+  right: 3em;
+  top: 5em;
+}
+.video{
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden;
+}
+.video iframe{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+}
+
+footer{
+  padding: 6em 3em;
+}
+footer ul{
+  padding-left: 0;
+  list-style: none;
+}
+footer li{
+  margin-bottom: 2em;
+  font-size: smaller;
+  color: rgb(15, 15, 15, .6);
+}
+footer h4{
+  color: rgba(187, 36, 36, 0.767);
+  margin-bottom: 3em;
+}
+.arr{
+  color: rgba(187, 36, 36, 0.767);
+  font-size: 18px;
+}
