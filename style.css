@@ -59,13 +59,13 @@ button{
   position: relative;
 }
 .pop{
-  width: 60%;
+  width: 50%;
   margin-top: 2em;
   margin-right: auto;
   margin-left: auto;
 }
 .pot{
-  width: 80%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -75,42 +75,42 @@ button{
 .onion{
   top: 65%;
   left: 15%;
-  width: 25%;
+  width: 20%;
 }
 .pepper1{
   top: 40%;
   left: 3%;
-  width: 25%;
+  width: 20%;
 }
 .tt{
   top: 90%;
   right: 10%;
-  width: 27%;
+  width: 20%;
 }
 .pepper{
   top: 99%;
   left: 10%;
-  width: 20%;
+  width: 15%;
 }
 .tomato{
   top: 50%;
   right: 0%;
-  width: 20%;
+  width: 15%;
 }
 .donot{
   top: 110%;
   right: 0%;
-  width: 25%;
+  width: 20%;
 }
 .onion1{
   top: 155%;
   left: 5%;
-  width: 20%;
+  width: 15%;
 }
 .donot1{
   top: 150%;
   right: 0%;
-  width: 30%;
+  width: 25%;
 }
 
 .section2{
@@ -154,6 +154,8 @@ button{
 
 .section5{
   background-image: url("./images/food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   padding: 50px 10px;
 }
@@ -200,4 +202,8 @@ footer h4{
 .arr{
   color: rgba(187, 36, 36, 0.767);
   font-size: 18px;
+}
+footer a{
+  text-decoration: none;
+  color: rgb(15, 15, 15, .6);
 }

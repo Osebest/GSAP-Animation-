@@ -1,0 +1,91 @@
+@media only screen and (min-width:410px){
+  .onion1{top: 145%;}
+  .donot1{top: 135%;}
+}
+@media only screen and (min-width:550px){
+  #hamburgerBtn{font-size: xx-large;}
+  .onion1{top: 140%;}
+  .donot1{top: 130%;}
+  .section3 button {width: 40%;}
+  .section3 p, .section4 p, .section5 p {width: 70%; font-size: large;}
+  .section2 p {width: 70%; margin-right: auto; margin-left: auto; font-size: large;}
+  footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid: min-content / 1fr 1fr;
+  }
+  #hideNav button{
+    padding: 15px 40px;
+    font-size: large;
+  }
+  .arrow{right: 15em;}
+}
+@media only screen and (min-width:768px){
+  footer{
+    grid: min-content / repeat(4, 1fr);
+    justify-content: start;
+    align-items: start;
+  }
+  .section5{
+    padding: 50px 30px;
+    display: grid;
+    grid: min-content / 1fr 1fr;
+  }
+  .arrow{left: 10em; top: 8em;}
+  .section4{
+    display: grid;
+    justify-content: center;
+  }
+  .section4 p, .section4 button{width: 50%; margin-left: auto; margin-right: auto; font-size: x-large;}
+  .section4 button{
+    margin-left: 8em;
+    width: 50%;
+  }
+  .section3 p {width: 60%; font-size: x-large;}
+  .section3 button{width: 30%; font-size: larger;}
+  .onion1{top: 140%;}
+  .donot{top: 105%; width: 15%;}
+  .pepper{top: 90%;}
+  .section2 {padding-top: 20%;}
+  .section2 p{font-size: xx-large;}
+  #hideNav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+  }
+  #hamburgerBtn{font-size: 50px; margin: 30px;}
+}
+@media only screen and (min-width:810px){
+  .onion1{top: 130%; width: 15%;}
+}
+@media only screen and (min-width:1024px){
+  .section4{grid: min-content / 1fr 1fr;}
+  .section4 p, .section4 button{margin-left: 100px;}
+  .section5 p{font-size: 25px; margin-left: 3em;}
+  .arrow{top: 12em; left: 18em;}
+  footer h4{font-size: larger;}
+  .section3 p {width: 50%; font-size: x-large; margin-left: 3em;}
+  .section3 button{font-size: x-large; margin-left: 3em;}
+  .section2 p{width: 50%; font-size: 30px;}
+  #hamburgerBtn{display: none;}
+  .close{visibility: visible;}
+  .section1{padding-left: 100px; padding-right: 40px;}
+  .header{display: grid; grid-auto-flow: column; margin: 10px 0 1em 30px;}
+  .header .logo{width: 45%;}
+  #hideNav button{
+    padding: 0px 20px; margin-top: 0px;
+    font-size: 15px; margin-right: 15px;
+    white-space: nowrap;
+  }
+  .pop{margin-top: 0; width: 40%;}
+  .pot{width: 50%;}
+  .onion{top: 60%; left: 30%; width: 15%;}
+  .pepper1{top: 30%; left: 15%; width: 15%;}
+  .tt{width: 15%;}
+  .pepper{width: 12%;}
+  .tomato{top: 30%; width: 15%;}
+  .donot{top: 110%; width: 20%;}
+  .onion1{top: 145%; width: 15%;}
+  .donot1{top: 150%;width: 30%;}
+}
