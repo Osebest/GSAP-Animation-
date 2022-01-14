@@ -63,6 +63,7 @@ button{
   background-size: cover;
   padding: 10px 20px 10px 20px;
   position: relative;
+ 
 }
 .pop{
   width: 50%;
@@ -102,7 +103,7 @@ button{
 }
 .tomato{
   top: 50%;
-  right: 0%;
+  right: 2%;
   width: 15%;
 }
 .donot{
@@ -127,12 +128,14 @@ button{
   background-repeat: no-repeat;
   padding-bottom: 100px;
   padding-top: 20%;
+  overflow: hidden;
 }
 
 .section3{
   background-image: url("./images/black.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .section3>div{
   display: flex;
@@ -148,6 +151,7 @@ button{
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 10px 0 10px;
+  overflow: hidden;
 }
 .section4 p{
   margin: 20px;
@@ -166,6 +170,7 @@ button{
   background-size: cover;
   position: relative;
   padding: 50px 10px;
+  overflow: hidden;
 }
 .section5 p{
   margin-bottom: 15%;
@@ -192,6 +197,7 @@ button{
 }
 
 footer{
+  overflow: hidden;
   padding: 6em 3em;
 }
 footer ul{
