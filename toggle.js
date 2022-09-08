@@ -1,3 +1,4 @@
+
 let icon = document.getElementById('hamburgerBtn')
 
 icon.onclick = function (){
@@ -30,42 +31,42 @@ tltwo.fromTo(".fruit", {opacity:0, scale:0, y:-1000}, {opacity:1, scale:1, y:0, 
      
 gsap.from(".section2 p", {
   y:300, opacity:0, 
-  duration:2, ease:"power4.out",
-  start: "top center",
+  duration:1.5, ease:"power4.out",
   scrollTrigger: {
+    start: "top 90%",
     trigger: ".section2 p",
     toggleActions: "restart reverse restart reverse"
   }
 });
-gsap.from(".join", {x:-300, opacity:0, stagger:.3, duration:.5, ease:"power4.out",
+gsap.fromTo(".join", {x:-300, opacity:0}, {x:0, opacity:1, stagger:.3, duration:.5, ease:"power4.out",
   scrollTrigger:{
     start: "top center",
     trigger:".join",
     toggleActions: "restart reverse restart reverse"
   }
 });
-gsap.from(".wanna", {x:-300, opacity:0, duration:1, ease:"back.out(1)",
+gsap.fromTo(".wanna", {x:-300, opacity:0}, {x:0, opacity:1, duration:1, ease:"back.out(1)",
   scrollTrigger:{
     start: "top center",
     trigger:".wanna",
     toggleActions: "restart none none reverse"
   }
 });
-gsap.from(".man", {x:300, opacity:0, duration:1, delay:.3, ease:"back.out(1)",
+gsap.fromTo(".man", {x:300, opacity:0}, {x:0, opacity:1, duration:1, delay:.3, ease:"back.out(1)",
   scrollTrigger:{
     start: "top center",
     trigger:".man",
     toggleActions: "restart none none reverse"
   }
 });
-gsap.from(".last", {x:-300, opacity:0, duration:1, stagger:.5, ease:"back.out(1)",
+gsap.fromTo(".last", {x:-300, opacity:0}, {x:0, opacity:1, duration:1, stagger:.5, ease:"back.out(1)",
   scrollTrigger:{
     start: "top center",
     trigger:".last",
     toggleActions: "restart none none reverse"
   }
 });
-gsap.from(".video", {x:300, opacity:0, duration:1, delay:.3, ease:"back.out(1)", delay:.5,
+gsap.fromTo(".video", {x:300, opacity:0}, {x:0, opacity:1, duration:1, delay:.3, ease:"back.out(1)", delay:.5,
   scrollTrigger:{
     start: "top center",
     trigger:".video",

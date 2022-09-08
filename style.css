@@ -125,11 +125,6 @@ button:hover{
   right: 2%;
   width: 15%;
 }
-.donot{
-  top: 110%;
-  right: 0%;
-  width: 20%;
-}
 .onion1{
   top: 155%;
   left: 5%;
@@ -267,4 +262,9 @@ footer h4{
 footer a{
   text-decoration: none;
   color: rgb(15, 15, 15, .6);
+}
+
+
+.join, .wanna, .man, .video, .last{
+  opacity: 0;
 }
