@@ -4,65 +4,72 @@ icon.onclick = function (){
   document.getElementById('hideNav').classList.toggle("open")
 }
 
+const parallax = document.getElementById("parallax");
+
+window.addEventListener("scroll", ()=>{
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = offset * 0.4 + "px";
+})
+
 
 
 /*GSAP ANIMATION*/
 
 gsap.registerPlugin(ScrollTrigger);
 
-var tl = gsap.timeline({defaults:{duration:1}, repeat:-1, repeatDelay:.8})
+var tl = gsap.timeline({defaults:{duration:1}, repeat:-1, repeatDelay:.5, delay:3})
 
-tl.to(".one", {opacity:1, yoyo:true, repeat:1})
-  .to(".two", {opacity:1, yoyo:true, delay:1, repeat:1})
-  .to(".three", {opacity:1, yoyo:true, delay:1, repeat:1});
+tl.fromTo(".one", {opacity:0, scale:0.4}, {opacity:1, scale:1, yoyo:true, repeat:1})
+  .fromTo(".two", {opacity:0, scale:0.4}, {opacity:1, scale:1, yoyo:true, delay:.2, repeat:1})
+  .fromTo(".three", {opacity:0, scale:0.4}, {opacity:1, scale:1, yoyo:true, delay:.2, repeat:1});
 
 var tltwo = gsap.timeline({default:{duration:1}})
 
-tltwo.from(".fruit", {opacity:0, y:-1000, stagger:.3, duration:3, ease: "bounce(.1)"})
-     .from(".pot", {y:-1000, scale:0, rotation:(10*360), opacity:0, ease:"power-1.easeIn", duration:3}, "<.5");
+tltwo.fromTo(".fruit", {opacity:0, scale:0, y:-1000}, {opacity:1, scale:1, y:0, stagger:.3, duration:4.5, ease: "bounce.out"})
+      .fromTo(".pot", {y:-1000, scale:0, opacity:0}, {y:0, scale:1, rotation:(5*360), opacity:1, ease:"back.out(1)", duration:2.5}, "<.5");
      
 gsap.from(".section2 p", {
-  y:200, opacity:0, 
-  duration:2, ease:"back",
+  y:300, opacity:0, 
+  duration:2, ease:"power4.out",
   start: "top center",
   scrollTrigger: {
     trigger: ".section2 p",
-    toggleActions: "restart none none restart"
+    toggleActions: "restart reverse restart reverse"
   }
 });
-gsap.from(".join", {x:-300, opacity:0, stagger:.5, duration:.5, ease:"back",
+gsap.from(".join", {x:-300, opacity:0, stagger:.3, duration:.5, ease:"power4.out",
   scrollTrigger:{
     start: "top center",
     trigger:".join",
-    toggleActions: "restart none reverse pause"
+    toggleActions: "restart reverse restart reverse"
   }
 });
-gsap.from(".wanna", {x:-300, opacity:0, duration:1, ease:"back",
+gsap.from(".wanna", {x:-300, opacity:0, duration:1, ease:"back.out(1)",
   scrollTrigger:{
     start: "top center",
     trigger:".wanna",
-    toggleActions: "restart none reverse pause"
+    toggleActions: "restart none none reverse"
   }
 });
-gsap.from(".man", {x:300, opacity:0, duration:1, delay:.5, ease:"back",
+gsap.from(".man", {x:300, opacity:0, duration:1, delay:.3, ease:"back.out(1)",
   scrollTrigger:{
     start: "top center",
-    trigger:".wanna",
-    toggleActions: "restart none reverse pause"
+    trigger:".man",
+    toggleActions: "restart none none reverse"
   }
 });
-gsap.from(".last", {x:-300, opacity:0, duration:1, stagger:.5, ease:"back",
+gsap.from(".last", {x:-300, opacity:0, duration:1, stagger:.5, ease:"back.out(1)",
   scrollTrigger:{
     start: "top center",
     trigger:".last",
-    toggleActions: "restart reverse restart reverse"
+    toggleActions: "restart none none reverse"
   }
 });
-gsap.from(".video", {x:300, opacity:0, duration:1, delay:.5, ease:"back", delay:.5,
+gsap.from(".video", {x:300, opacity:0, duration:1, delay:.3, ease:"back.out(1)", delay:.5,
   scrollTrigger:{
     start: "top center",
     trigger:".video",
-    toggleActions: "restart reverse restart reverse"
+    toggleActions: "restart none none reverse"
   }
 });
 
